@@ -27,20 +27,21 @@ Dữ liệu sẽ được lưu vào file Excel (.xlsx) và tự động chạy *
 
 ### Bước 1: Clone project
 
-
 git clone https://github.com/ten-cua-ban/alonhadat-crawler.git
 cd alonhadat-crawler
 ### Bước 2: Tạo môi trường ảo (khuyên dùng)
 
 python -m venv venv
-# Windows:
+#### Windows:
 venv\Scripts\activate
-# macOS/Linux:
+#### macOS/Linux:
 source venv/bin/activate
 ### Bước 3: Cài đặt thư viện
 
 pip install -r requirements.txt
+
 Nếu chưa có file requirements.txt, bạn có thể tạo bằng lệnh:
+
 pip freeze > requirements.txt
 ## 🛠 Cách sử dụng
 Chạy thủ công
