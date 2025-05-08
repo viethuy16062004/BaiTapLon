@@ -43,7 +43,7 @@ pip install -r requirements.txt
 Nếu chưa có file requirements.txt, bạn có thể tạo bằng lệnh:
 
 pip freeze > requirements.txt
-## 🛠 Cách sử dụng
+## Cách sử dụng
 Chạy thủ công
 Chạy script một lần để lấy dữ liệu ngay:
 python crawler.py
