@@ -13,11 +13,11 @@ Dự án sử dụng Python và Selenium để thu thập dữ liệu từ trang
 
 ### 1. Clone dự án từ GitHub
 
-git clone https://github.com/ten_nguoi_dung/du-an-thu-thap-viec-lam.git
-cd du-an-thu-thap-viec-lam
+git clone https://github.com/viethuy16062004/BaiTapLon
+cd BaiTapLon.py
+
 ### 2.Tạo môi trường ảo 
 python -m venv env
-source env/bin/activate      # Trên macOS/Linux
 env\Scripts\activate.bat     # Trên Windows
 ### 3.Cài đặt thư viện cần thiết
 Nếu có file requirements.txt:
