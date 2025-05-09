@@ -1,4 +1,4 @@
-#Hướng Dẫn Cài Đặt Dự Án Thu Thập Việc Làm Đà Nẵng
+# Hướng Dẫn Cài Đặt Dự Án Thu Thập Việc Làm Đà Nẵng
 
 Dự án sử dụng Python và Selenium để thu thập dữ liệu từ trang [vieclamdanang.vn].
 
@@ -16,16 +16,17 @@ Dự án sử dụng Python và Selenium để thu thập dữ liệu từ trang
 
 git clone https://github.com/ten_nguoi_dung/du-an-thu-thap-viec-lam.git
 cd du-an-thu-thap-viec-lam
-##Tạo môi trường ảo 
+### 2.Tạo môi trường ảo 
 python -m venv env
 source env/bin/activate      # Trên macOS/Linux
 env\Scripts\activate.bat     # Trên Windows
-### Cài đặt thư viện cần thiết
+### 3.Cài đặt thư viện cần thiết
 Nếu có file requirements.txt:
 pip install -r requirements.txt
 Hoặc cài trực tiếp:
 
 pip install selenium webdriver-manager pandas schedule
-###Kiểm tra chạy thử
+### 4.Kiểm tra chạy thử
 Chạy file Python:
-python thu_thap_viec_lam.py
+python BaiTapLon.py
+
