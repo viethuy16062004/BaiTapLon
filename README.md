@@ -1,62 +1,31 @@
-#  Alonhadat Da Nang Crawler
+#Hướng Dẫn Cài Đặt Dự Án Thu Thập Việc Làm Đà Nẵng
 
-Một script tự động thu thập dữ liệu bất động sản tại Đà Nẵng từ website [alonhadat.com.vn](https://alonhadat.com.vn), bao gồm: **Tiêu đề, Mô tả, Địa chỉ, Diện tích, Giá** từ tất cả các trang.  
-Dữ liệu sẽ được lưu vào file Excel (.xlsx) và tự động chạy **lúc 6h sáng mỗi ngày**.
+Dự án sử dụng Python và Selenium để thu thập dữ liệu từ trang [vieclamdanang.vn].
 
----
+## Yêu cầu
 
-##  Tính năng
-
-- Tự động thu thập dữ liệu bất động sản từ nhiều trang.
-- Trích xuất đầy đủ thông tin: Tiêu đề, Mô tả, Địa chỉ, Diện tích, Giá.
-- Lưu dữ liệu vào file Excel theo ngày.
-- Tự động chạy theo lịch định sẵn mỗi ngày lúc 06:00 sáng.
-- Có thể mở rộng ra các khu vực khác hoặc website khác.
+- Python 3.7 trở lên  
+- Trình duyệt Google Chrome  
+- Kết nối Internet  
 
 ---
 
-##  Yêu cầu hệ thống
+## Cài đặt
 
-- Python 3.8 trở lên
-- Google Chrome đã cài đặt
-- Trình quản lý gói `pip`
+### 1. Clone dự án từ GitHub
 
----
-
-##  Cài đặt
-
-### Bước 1: Clone project
-
-git clone https://github.com/ten-cua-ban/alonhadat-crawler.git
-cd alonhadat-crawler
-### Bước 2: Tạo môi trường ảo (khuyên dùng)
-
-python -m venv venv
-#### Windows:
-venv\Scripts\activate
-#### macOS/Linux:
-source venv/bin/activate
-### Bước 3: Cài đặt thư viện
-
+git clone https://github.com/ten_nguoi_dung/du-an-thu-thap-viec-lam.git
+cd du-an-thu-thap-viec-lam
+##Tạo môi trường ảo 
+python -m venv env
+source env/bin/activate      # Trên macOS/Linux
+env\Scripts\activate.bat     # Trên Windows
+### Cài đặt thư viện cần thiết
+Nếu có file requirements.txt:
 pip install -r requirements.txt
+Hoặc cài trực tiếp:
 
-Nếu chưa có file requirements.txt, bạn có thể tạo bằng lệnh:
-
-pip freeze > requirements.txt
-## Cách sử dụng
-Chạy thủ công
-Chạy script một lần để lấy dữ liệu ngay:
-python crawler.py
-Chạy tự động mỗi ngày
-Script sử dụng thư viện schedule để tự động chạy lúc 06:00 sáng mỗi ngày.
-
-Chỉ cần chạy:
-
-python crawler.py
-Và để máy chạy liên tục hoặc cấu hình với Task Scheduler (Windows) hoặc crontab (Linux/macOS) để chạy nền.
-
- Dữ liệu đầu ra
-File Excel sẽ được lưu theo ngày, ví dụ:
-alonhadat_danang_2025-05-08.xlsx
-Bạn có thể sửa code để lưu thành .csv nếu cần:
-df.to_csv("alonhadat_danang_2025-05-08.csv", index=False)
+pip install selenium webdriver-manager pandas schedule
+###Kiểm tra chạy thử
+Chạy file Python:
+python thu_thap_viec_lam.py
