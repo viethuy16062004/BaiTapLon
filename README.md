@@ -7,7 +7,6 @@ Dự án sử dụng Python và Selenium để thu thập dữ liệu từ trang
 - Python 3.7 trở lên  
 - Trình duyệt Google Chrome  
 - Kết nối Internet  
-
 ---
 
 ## Cài đặt
